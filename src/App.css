@@ -6,8 +6,8 @@
 
 .main_div{
   width: 100%;
-  height: 100vh;
-  background-color: cadetblue;
+  min-height: 100vh;
+  background-image: linear-gradient(red, yellow);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,11 +16,12 @@
 }
 
 .center_div{
-  width: 55%;
-  height: 80vh;
-  background-color: #953ad1;
+  width: 50%;
+min-height: 70vh;
+  background-color: #dfd5e6;
   box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  margin: 20px 0;
 }
 
 h1{
@@ -42,62 +43,92 @@ input{
   width: 60%;
   border-bottom: 2px solid rgb(32, 17, 114);
   outline: none;
- 
+
   
+  
+}
+
+#cut{
+  display:flex;
+  margin-right: 20px;
+  justify-content: right;
+  text-align: center;
+  align-items: center;
+  width: 20px;
+  float: left;
+  margin-left: 30px;
   
 }
 
 button{
-  min-height: 40px;
-  width: 40px;
-  border-radius: 50%;
+  min-height: 30px;
+  width: 110px;
+ 
   border-color: transparent;
-  background-color: violet;
+  background-color: rgb(236, 44, 18);
   color: #fff;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 20px;
   border: none;
+  cursor: pointer;
   outline: none;
   margin-left: 10px;
-  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
-}
+ 
+  transition: 0.3s ease-in-out;}
+
 button:hover{
-  background-color: #20bf6b;
+  box-shadow: inset 60px 0 0 0 yellow;
+ 
 }
 ol{
   margin-top: 20px;
 }
-ol li{
+ li{
   padding-left: 5px;
   text-align: left;
   font-size: 20px;
+  ;
   font-weight: 500;
-  min-height: 40px;
+  min-height: 30px;
   display: flex;
-  align-items: center;
+ justify-content:left;
+
   color: violet;
   text-transform: capitalize;
-  background-color: green;
+  
+
+ 
+  
   width: 50%;
+  
 }
 .todo_style{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
+ 
+  
+  
+  margin-right: 50px;
 }
 
-.todo_style .fa-times{
-  width: 20px;
+
+
+.todo_style .fa-trash{
+ 
   height: 20px;
-  display: flex;justify-content: center;
-  align-items: center;
-  background-color: violet;
-  margin: 0 15px 0 35px;
-  border-radius: 50%;
-  color: aliceblue;
+  display: flex;justify-content: left;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  
+  
+ 
+  
+  /* margin: 0 15px 0 35px; */
+  
+  color: rgb(3, 17, 29);
   box-shadow:5px 5px 25px -5px rgba(0, 0, 0, 0.3) ;
 }
-.todo_style .fa-times:hover{
+.todo_style .fa-trash:hover{
   color: crimson;
 }
 .todo_style .fa-times:hover .list_style{
