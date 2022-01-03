@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react/cjs/react.development'
 
 const Todo = (props) => {
-  const [line, setline] = useState()
+  const [line, setline] = useState("")
 
   const cutit = () => {
     setline(!line)
